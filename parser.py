@@ -81,14 +81,3 @@ def get_return_type(line: str):
     if len(parts) == 1:
         return ""
     return parts[1].split('{')[0].split()[0]
-
-
-if __name__ == "__main__":
-    comment_regex = r"^[\n\t\s]*/\*\*"
-
-    # print(bool(re.match(comment_regex, a)))
-    a = get_file_methods("DefaultGenerator.php")
-    print(len(a))
-    print(a[0])
-    print(a[1])
-    # print(a[2])
